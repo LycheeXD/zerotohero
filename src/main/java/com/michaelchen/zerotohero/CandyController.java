@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityExistsException;
 
-
 @RestController
 public class CandyController {
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+
+    <script src="/myCoolJs.js"></script>
+
+</head>
+<body>
+
+<div>
+    poop mcnuggets
+
+    <div th:if="${candy} != null">
+        <span th:text="'id: ' + ${candy.id}"></span>
+        <span th:text="'name: ' + ${candy.name}"></span>
+    </div>
+
+
+    <form>
+        <input type="text" name="id">
+        <input type="text" name="name">
+        <input type="submit">
+    </form>
+
+</div>
+
+</body>
+</html>
