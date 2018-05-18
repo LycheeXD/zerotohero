@@ -1,0 +1,15 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cp ./node_modules/react/umd/react.development.js ../src/main/resources/static/react.js && cp ./node_modules/react-dom/umd/react-dom.development.js ../src/main/resources/static/react-dom.js && cp ./src/main.js ../src/main/resources/static/main.js && cp ./src/hello.js ../src/main/resources/static/hello.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}

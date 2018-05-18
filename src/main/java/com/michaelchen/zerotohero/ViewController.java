@@ -14,7 +14,7 @@ public class ViewController {
     @Autowired
     private CandyRepository candyRepository;
 
-    @RequestMapping(path = "/", method = RequestMethod.GET)
+    @RequestMapping(path = "/server-side-rendered", method = RequestMethod.GET)
     public ModelAndView getHomePage(@RequestParam(required = false) Long id) {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("homepage");
@@ -27,7 +27,7 @@ public class ViewController {
         return modelAndView;
     }
 
-    @RequestMapping(path = "/mvcNewCandy", method = RequestMethod.POST)
+    @RequestMapping(path = "/server-side-rendered/new-candy", method = RequestMethod.POST)
     public String addCandy(@RequestParam Long id, @RequestParam String name) {
         Candy candy = new Candy();
 
